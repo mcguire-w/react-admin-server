@@ -19,7 +19,7 @@ router.get('/userslist', function (ctx, next) {
     let num = ctx_query.pageSize || 10
     let total = data.length - 1;
     if (data.length === 0) {
-        for (let i = 0; i <= 100; i++) {
+        for (let i = 0; i <= 5; i++) {
             data.push({
                 key: i,
                 username: `John${i}`,
